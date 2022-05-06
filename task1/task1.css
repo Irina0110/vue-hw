@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+#cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDEAD;
+    border-radius: 30px;
+    max-width: 700px;
+    box-shadow: 10px 10px 15px #ebe6e6;
+}
+h3{
+    font-size: 30px;
+    color: white;
+    background-color: #8B4513;
+    padding: 10px;
+    opacity: 50%;
+    width: 100%;
+    text-align: center;
+}
+span{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+img{
+    width: 500px;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #8B4513;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 60%;
+}

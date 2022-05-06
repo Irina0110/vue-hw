@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="task1.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="cards">
+        <div class="card" v-for="card in cats">
+            <h3>Имя: {{card.name}} </h3>
+            <span>Возраст: {{card.age}}</span>
+            <span>Цвет: {{card.color}}</span>
+            <img :src="card.img" alt="{{card.name}}">
+            <a href="#">Подробнее</a>
+        </div>
+    </div>
+<script src="task1.js"></script>
+</body>
+</html>
