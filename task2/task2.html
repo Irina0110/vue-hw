@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div id="goods">
+        <div class="buttons">
+            <button @click="sortByTitle"> Отсортировать по наименованию</button>
+            <button @click="sortByCost"> Отсортировать по стоимости</button>
+            <button @click="sortByCount"> Отсортировать по количеству</button>
+        </div>
+        <div class="cards">
+            <div class="card" :class="[{zero: good.count === 0}, {notMany: good.count > 1}, {many: good.count > 20}]"
+                 v-for="good of goods">
+                <h2>{{good.title}}</h2>
+                <span>{{good.price}}</span>
+            </div>
+        </div>
+    </div>
+<script src="task2.js"></script>
+</body>
+</html>

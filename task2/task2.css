@@ -1,0 +1,28 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.zero{
+    background-color: red;
+}
+.notMany{
+    background-color: yellowgreen;
+}
+.many{
+    background-color: aqua;
+}
+.card{
+    height: 200px;
+    text-align: center;
+}
+button{
+    margin-right: 15px;
+    height: 30px;
+    width: 300px;
+}

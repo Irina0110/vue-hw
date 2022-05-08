@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="task2_1.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <article id="articles">
+            <button @click="sortList"> Отобразить списком</button>
+            <button @click="sortTable"> Отобразить сеткой</button>
+            <div :class="{table: articlesView, list: !articlesView}">
+            <div class="card" v-for="cards of articles">
+                <img :src="cards.image">
+                <h2> {{cards.title.toUpperCase()}}</h2>
+            </div>
+        </div>
+    </article>
+<script src="task2_1.js"></script>
+</body>
+</html>

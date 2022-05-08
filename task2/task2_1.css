@@ -1,0 +1,44 @@
+body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+.list img{
+    border-radius: 50%;
+    height: 200px;
+    float: left;
+}
+.card{
+    flex-wrap: nowrap;
+}
+.card h2{
+    font-weight: lighter;
+    text-align: center;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1px;
+}
+.table img{
+    height: 380px;
+    width: auto;
+    border-radius: 10px;
+}
+.table h2{
+    display: none;
+}
+button{
+    width: 49%;
+    height: 50px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
