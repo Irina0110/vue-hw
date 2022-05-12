@@ -30,16 +30,12 @@ let goods = [
 Vue.createApp({
     data() {
         return {
-            goods
+            goods: goods.sort(
+                (a,b) => a.count - b.count
+            )
         }
     },
     computed: {
-/*        sortByCount(){
-            goods = this.goods.sort(
-                (a,b) => a.count - b.count
-            );
-            return goods
-        },*/
         notMany(good){
             if (good.count > 1 && good.count < 20) return true
         }
