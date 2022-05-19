@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+
+<section id="gallery">
+    <item-card v-on:delete-img="deleteImage" v-for="image in images" :info="image.img" :id="image.name"></item-card>
+    <input type="text" v-model.lazy="idInput" placeholder="ведите уникальный номер изображения">
+    <input type="text" v-model.lazy="linkInput" placeholder="ведите ссылку изображения">
+    <button @click="addImage(idInput, linkInput)">Добавить изображение</button>
+</section>
+
+<script src="task4.js"></script>
+</body>
+</html>
