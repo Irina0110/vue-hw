@@ -1,0 +1,27 @@
+#services{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    font-size: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.priceList{
+    grid-column: 2/3;
+    margin-right: 10px;
+
+}
+.card:nth-child(odd){
+    background-color: darkgrey;
+}
+.card:nth-child(even){
+    background-color: antiquewhite;
+}
+.selected{
+    grid-column: 3/4;
+}
+span, p{
+    margin: 10px auto;
+}

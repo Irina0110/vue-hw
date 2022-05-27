@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="task3_1.css">
+</head>
+<body>
+<section id="services">
+    <div class="priceList">
+        <div class="card" v-for="item in services" @click="add(item)">
+            <span>{{item.title}}</span>
+            <p>{{item.price}}</p>
+        </div>
+    </div>
+    <div class="selected">
+        <div class="card" v-for="item in selected" @click="deleteItem(item)">
+            <span>{{item.title}}</span>
+            <p>{{item.price}}</p>
+        </div>
+        <p>Итого: {{bill}}</p>
+    </div>
+
+</section>
+<script src="task3_1.js"></script>
+</body>
+</html>

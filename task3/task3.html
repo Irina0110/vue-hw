@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<article id="articles">
+    <input type="text" v-model="search">
+    <div v-for="cards of articles">
+        <div class="card" v-if="cards.title.toLowerCase().includes(search.toLowerCase())" >
+            <h2> {{cards.title.toUpperCase()}}</h2>
+        </div>
+    </div>
+
+    <div v-for="cards of filtr">
+        <div class="card" >
+            <h2> {{cards.title.toUpperCase()}}</h2>
+        </div>
+    </div>
+</article>
+<script src="task3.js"></script>
+</body>
+</html>
